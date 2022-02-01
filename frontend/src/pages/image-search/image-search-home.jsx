@@ -87,7 +87,7 @@ function ImageResultsGallery(props) {
     let pexelImageList = [];
 
     const onInfoClick = e => {
-
+        console.log('clicky clicky');
         const id = e.currentTarget.getAttribute('tag');
 
         const element = document.getElementById(id);
