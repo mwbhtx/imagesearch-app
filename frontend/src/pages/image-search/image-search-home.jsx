@@ -92,7 +92,9 @@ function ImageResultsGallery(props) {
         console.log(id);
         const element = document.getElementById(id);
         console.log(element);
+        console.log(element.classList);
         element.classList.toggle('visible');
+        console.log(element.classList);
     }
 
     const renderPexelList = () => {
