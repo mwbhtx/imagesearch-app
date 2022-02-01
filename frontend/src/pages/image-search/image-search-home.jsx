@@ -32,8 +32,7 @@ function SearchBar() {
 
         e.preventDefault();
         
-        const pexelsApi = process.env.REACT_APP_PEXELS_API_KEY; 
-        const url = 'http://localhost:3001/search';
+        const url = 'https://mwb-imagesearch-l3364.ondigitalocean.app/search';
         const queryParams = {
             query: formValue,
             per_page: 80,
