@@ -125,11 +125,10 @@ input[type='submit']:active {
     width: 100%;
     background-color: black;
     opacity: 80%;
-    visibility: hidden;
 }
 
 .visible {
-    visibility: visible;
+    visibility: hidden;
 }
 
 .image-detail-container * {
