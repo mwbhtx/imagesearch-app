@@ -87,14 +87,11 @@ function ImageResultsGallery(props) {
     let pexelImageList = [];
 
     const onInfoClick = e => {
-        console.log('clicky clicky');
+
         const id = e.currentTarget.getAttribute('tag');
-        console.log(id);
+
         const element = document.getElementById(id);
-        console.log(element);
-        console.log(element.classList);
         element.classList.toggle('visible');
-        console.log(element.classList);
     }
 
     const renderPexelList = () => {
@@ -108,16 +105,14 @@ function ImageResultsGallery(props) {
                 const avgColor = value.avg_color;
 
                 pexelImageList.push(
-                    <div key={imageID} className='image-container md-light' style={{ backgroundColor: avgColor}}>
-                    <div className='image-detail-container' id={imageID}>
-                        
-                        <span>Photographer</span>
-                        <a className='artist-link' href={photographerURL} target='_blank'>{imageArtist}</a>
-                        <a className='image-link' href={imageURL} target='_blank'>view image</a>
-                    </div>
+                    <div key={imageID} className='image-container' style={{ backgroundColor: avgColor}}>
+                        <div className='image-detail-container' id={imageID}>   
+                            <span>Photographer</span>
+                            <a className='artist-link' href={photographerURL} target='_blank'>{imageArtist}</a>
+                            <a className='image-link' href={imageURL} target='_blank'>view image</a>
+                        </div>
                         <div className='info-icon-container' tag={imageID}  onClick={onInfoClick}>
-                            <span className='circle-layer'/>
-                            <i className="fas fa-bars info-icon"></i>
+                        <i class="fas fa-bars info-icon"></i>
                         </div>
                         <img src={imageURL}/>
                     </div>
