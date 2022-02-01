@@ -89,8 +89,9 @@ function ImageResultsGallery(props) {
     const onInfoClick = e => {
         console.log('clicky clicky');
         const id = e.currentTarget.getAttribute('tag');
-
+        console.log(id);
         const element = document.getElementById(id);
+        console.log(element);
         element.classList.toggle('visible');
     }
 
