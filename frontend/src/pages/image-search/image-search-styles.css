@@ -128,7 +128,7 @@ input[type='submit']:active {
     visibility: hidden;
 }
 
-.image-detail-container.visible {
+.visible {
     visibility: visible;
 }
 
