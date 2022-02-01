@@ -139,13 +139,13 @@ input[type='submit']:active {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
     .gallery-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .gallery-container {
         grid-template-columns: 1fr 1fr;
     }
