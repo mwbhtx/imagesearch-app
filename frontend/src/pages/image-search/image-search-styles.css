@@ -124,7 +124,7 @@ input[type='submit']:active {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 80%;
+    opacity: 80;
 }
 
 .visible {
